@@ -8,7 +8,7 @@ const Wave = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path fill="white">
+    <path fill="#202B4F">
       <animate
         repeatCount="indefinite"
         fill="freeze"
