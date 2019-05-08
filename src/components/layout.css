@@ -32,7 +32,7 @@ a {
 .Hero h1 {
   margin: 0;
   color: white;
-  font-size: 60px;
+  font-size: 45px;
   line-height: 1.2;
   animation: HeroAnimation 3s 0.1s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
   opacity: 0;
@@ -96,7 +96,7 @@ a {
 
 .Hero .Logos {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 40px;
   margin: 100px 0;
   justify-items: center;

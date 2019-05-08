@@ -12,6 +12,10 @@
   backdrop-filter: blur(20px);
 }
 
+.nav-item:hover {
+  cursor: pointer;
+}
+
 .HeaderGroup {
   max-width: 800px;
   margin: 0 auto;

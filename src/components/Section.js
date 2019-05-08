@@ -3,7 +3,7 @@ import styled from "styled-components"
 import Wave from "./Wave"
 
 const Section = props => (
-  <SectionGroup image={props.image}>
+  <SectionGroup id="section2" image={props.image}>
     <WaveTop>
       <Wave />
     </WaveTop>
