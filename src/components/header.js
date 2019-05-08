@@ -71,7 +71,7 @@ class Header extends React.Component {
             offset={-70}
             duration={500}
           >
-            <img width="80" src={require("../images/frame1.svg")} />
+            <img width="80" src={require("../images/Frame1.svg")} />
           </Link>
           <Link
             class="nav-item"
