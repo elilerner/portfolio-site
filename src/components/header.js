@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import "./Header.css"
+import "./layout.css"
 
 class Header extends React.Component {
   constructor(props) {
@@ -9,6 +10,7 @@ class Header extends React.Component {
 
     this.state = {
       hasScrolled: false,
+      isDarkMode: false,
     }
   }
 
@@ -26,6 +28,29 @@ class Header extends React.Component {
     }
   }
 
+  toggleDarkMode() {
+    this.setState({ isDarkMode: !this.state.isDarkMode })
+    document.body.style.background = this.state.isDarkMode
+      ? "#212c4f"
+      : "#f0f3f5"
+    document.getElementById("Hero").style.background = this.state.isDarkMode
+      ? "linear-gradient(90deg, rgba(57, 57, 57, 0.84375) 0%, rgba(56, 56, 56, 0.84375) 0.52%, rgba(41, 41, 41, 0.84375) 24.72%, rgba(35, 36, 35, 0.84375) 45.84%, rgba(24, 24, 24, 0.84375) 64.28%, rgba(17, 17, 17, 0.84375) 82.13%, rgba(4, 4, 4, 0.84375) 97.3%)"
+      : "linear-gradient(105.74deg, #fbed96 8.49%, #abecd6 91.84%)"
+    document.getElementById("svg-fill").style.fill = this.state.isDarkMode
+      ? "#202B4F"
+      : "white"
+    document.getElementById("mainTitle").style.color = this.state.isDarkMode
+      ? "white"
+      : "black"
+    document.getElementById("mainText").style.color = this.state.isDarkMode
+      ? "white"
+      : "black"
+    // document.getElementById("cardSection").style.background = this.state
+    //   .isDarkMode
+    //   ? "#212c4f"
+    //   : "#f0f3f5"
+  }
+
   render() {
     return (
       <div
@@ -38,9 +63,9 @@ class Header extends React.Component {
           <Link to="/courses">Courses</Link>
           <Link to="/downloads">Downloads</Link>
           <Link to="/workshops">Workshops</Link>
-          <Link to="/buy">
-            <button>Buy</button>
-          </Link>
+          <button onClick={event => this.toggleDarkMode(event)}>
+            {this.state.isDarkMode ? "☾" : "☀"}
+          </button>
         </div>
       </div>
     )

@@ -14,13 +14,13 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
-    <div className="Hero">
+    <div className="Hero" id="Hero">
       <div className="HeroGroup">
-        <h1>
+        <h1 id="mainTitle">
           Learn to <br />
           design and code React apps
         </h1>
-        <p>
+        <p id="mainText">
           Complete courses about the best tools and design systems. Prototype
           and build app with React and Swift.
         </p>
