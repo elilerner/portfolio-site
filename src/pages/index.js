@@ -20,7 +20,7 @@ const IndexPage = () => (
           My name is Eli Lerner <br />
         </h1>
         <p id="mainText">I'm an aspiring designer & front-end developer</p>
-        <Link to="/video">Watch the video</Link>
+        <a href="https://zety.com/mycv/elilerner">View My Online Resume</a>
         <div className="Logos">
           <img src={require("../images/logo-sketch.png")} width="50" />
           <img src={require("../images/logo-figma.png")} width="50" />

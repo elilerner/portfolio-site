@@ -1,8 +1,7 @@
 //import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import "./Header.css"
-import { Link, animateScroll as scroll } from "react-scroll"
+import { Link } from "react-scroll"
 
 class Header extends React.Component {
   constructor(props) {
@@ -35,13 +34,16 @@ class Header extends React.Component {
     console.log(this.state.isDarkMode + "hello")
     document.body.style.background = this.state.isDarkMode
       ? "#212c4f"
-      : "#f0f3f5"
+      : "#AFC2D5"
     document.getElementById("Hero").style.background = this.state.isDarkMode
       ? "linear-gradient(90deg, rgba(57, 57, 57, 0.84375) 0%, rgba(56, 56, 56, 0.84375) 0.52%, rgba(41, 41, 41, 0.84375) 24.72%, rgba(35, 36, 35, 0.84375) 45.84%, rgba(24, 24, 24, 0.84375) 64.28%, rgba(17, 17, 17, 0.84375) 82.13%, rgba(4, 4, 4, 0.84375) 97.3%)"
       : "linear-gradient(105.74deg, #fbed96 8.49%, #abecd6 91.84%)"
+    document.getElementById("Hero").style.transition = this.state.isDarkMode
+      ? "all 3s ease-in"
+      : "all 3s ease-in"
     document.getElementById("svg-fill").style.fill = this.state.isDarkMode
-      ? "#202B4F"
-      : "white"
+      ? "#212c4f"
+      : "#AFC2D5"
     document.getElementById("mainTitle").style.color = this.state.isDarkMode
       ? "rgba(255,255,255,0.8)"
       : "rgba(0,0,0,0.8)"
@@ -69,7 +71,7 @@ class Header extends React.Component {
             offset={-70}
             duration={500}
           >
-            <img width="30" src={require("../images/logo-designcode.svg")} />
+            <img width="80" src={require("../images/frame1.svg")} />
           </Link>
           <Link
             class="nav-item"
@@ -104,8 +106,11 @@ class Header extends React.Component {
           >
             Skills
           </Link>
-          <button onClick={event => this.toggleDarkMode(event)}>
-            {this.state.isDarkMode ? "☀" : "☾"}
+          <button
+            id="darkModeButton"
+            onClick={event => this.toggleDarkMode(event)}
+          >
+            <span class="icon">{this.state.isDarkMode ? "☀" : "☾"}</span>
           </button>
         </div>
       </div>
