@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
+import { Link } from "react-scroll"
 
 const Footer = ({ data, children }) => (
   <FooterGroup>
@@ -8,11 +8,19 @@ const Footer = ({ data, children }) => (
       Thanks for checking out my work. Feel free to contact me by email if you
       want to get in touch!
     </Text>
-    <Button>Tweet</Button>
+    <Button>Send me an email</Button>
     <LinkGroup>
-      <Link to="/courses">Courses</Link>
-      <Link to="/downloads">Downloads</Link>
-      <Link to="/workshops">Workshops</Link>
+      <Link
+        class="nav-item"
+        activeClass="active"
+        to="section0"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+      >
+        Back to top
+      </Link>
     </LinkGroup>
     <Copyright>{children}</Copyright>
   </FooterGroup>
@@ -33,6 +41,7 @@ const Text = styled.p`
   color: #486791;
   max-width: 500px;
   margin: 0 auto;
+  justify-content: center;
 `
 
 const Button = styled.button`
@@ -57,7 +66,8 @@ const LinkGroup = styled.div`
   width: 500px;
   margin: 50px auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+  justify-items: center;
   grid-gap: 10px;
 
   @media (max-width: 720px) {
