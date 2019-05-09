@@ -23,6 +23,7 @@
 .Card img {
   height: 110%;
   position: absolute;
+  margin-left: 165px;
   top: 0;
   z-index: -1;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -32,7 +33,7 @@
   color: white;
   font-size: 30px;
   margin: 20px 0 0 20px;
-  width: 190px;
+  width: 150px;
 }
 
 .Card p {
@@ -42,4 +43,5 @@
   font-size: 18px;
   align-self: end;
   margin: 0 0 20px 20px;
+  width: 150px;
 }

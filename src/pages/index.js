@@ -17,9 +17,9 @@ const IndexPage = () => (
     <div className="Hero" id="Hero">
       <div id="section0" className="HeroGroup">
         <h1 id="mainTitle">
-          My name is Eli Lerner <br />
+          I'm Eli Lerner <br />
         </h1>
-        <p id="mainText">I'm an aspiring designer & front-end developer</p>
+        <p id="mainText">A designer & front-end developer</p>
         <a href="https://zety.com/mycv/elilerner">View My Online Resume</a>
         <div className="Logos">
           <img src={require("../images/logo-sketch.png")} width="50" />
@@ -33,44 +33,45 @@ const IndexPage = () => (
     </div>
     <div id="section1" className="Cards">
       <h2>5 Projects, more coming</h2>
+      <a href="https://zety.com/mycv/elilerner">View On Github</a>
       <div className="CardGroup">
         <Card
-          title="iPhone UI (React Native)"
-          text="10 sections"
-          image={require("../images/wallpaper.jpg")}
+          title="iPhone UI"
+          text="React Native"
+          image={require("../images/ReactNativeProject.png")}
         />
         <Card
-          title="iPhone Prototype (Framer X + React)"
-          text="11 sections"
-          image={require("../images/wallpaper2.jpg")}
+          title="iPhone Prototype"
+          text="Framer X + React"
+          image={require("../images/FramerXProject.png")}
         />
         <Card
-          title="IOS Weather App (Swift)"
-          text="5 sections"
-          image={require("../images/wallpaper3.jpg")}
+          title="IOS Weather App"
+          text="Swift"
+          image={require("../images/IOSSwiftProject.png")}
         />
         <Card
-          title="Fitness Tracker (JS, PHP, SQL)"
-          text="10 sections"
-          image={require("../images/wallpaper4.jpg")}
+          title="Fitness Tracker"
+          text="JS, PHP, SQL"
+          image={require("../images/FitnessTrackerProject.png")}
         />
         <Card
-          title="iWatch Smart Home UI (Figma)"
-          text="10 sections"
-          image={require("../images/wallpaper4.jpg")}
+          title="iWatch Home UI"
+          text="Figma"
+          image={require("../images/FigmaProject.png")}
         />
       </div>
     </div>
     <Section
       image={require("../images/wallpaper2.jpg")}
       logo={require("../images/logo-react.png")}
-      title="React for Designers"
+      title="Work Experience"
       text="Learn how to build a modern site using React and the most efficient libraries to get your site/product online. Get familiar with components, Grid CSS, animations, interactions, dynamic data with Contentful and deploying your site with Netlify."
     />
-    <SectionCaption id="section3">12 section - 6 hours</SectionCaption>
+    <SectionCaption id="section3">Skills</SectionCaption>
     <SectionCellGroup>
       {staticdata.cells.map(cell => (
-        <Cell title={cell.title} image={cell.image} />
+        <Cell class="Cell" title={cell.title} image={cell.image} />
       ))}
     </SectionCellGroup>
   </Layout>

@@ -8,7 +8,9 @@ const Footer = ({ data, children }) => (
       Thanks for checking out my work. Feel free to contact me by email if you
       want to get in touch!
     </Text>
-    <Button>Send me an email</Button>
+    <Button>
+      <a href="mailto:eli@elilerner.com">Send me an email</a>
+    </Button>
     <LinkGroup>
       <Link
         class="nav-item"
@@ -55,6 +57,10 @@ const Button = styled.button`
   border-radius: 30px;
   justify-self: center;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  > a {
+    color: white;
+  }
 
   &:hover {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
