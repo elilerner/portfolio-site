@@ -33,7 +33,7 @@ const IndexPage = () => (
     </div>
     <div id="section1" className="Cards">
       <h2>5 Projects, more coming</h2>
-      <a href="https://zety.com/mycv/elilerner">View On Github</a>
+      <a href="https://github.com/elilerner">View On Github</a>
       <div className="CardGroup">
         <Card
           title="iPhone UI"
