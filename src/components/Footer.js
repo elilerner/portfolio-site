@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Link } from "react-scroll"
 
 const Footer = ({ data, children }) => (
-  <FooterGroup>
+  <FooterGroup id="section3">
     <Text>
       Thanks for checking out my work. Feel free to contact me by email if you
       want to get in touch!

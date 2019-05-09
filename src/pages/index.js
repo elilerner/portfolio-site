@@ -1,14 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Card from "../components/Card"
-import Section from "../components/Section"
 import Wave from "../components/Wave"
 import staticdata from "../../staticdata.json"
 import Cell from "../components/Cell"
 import styled from "styled-components"
+import Footer from "../components/Footer"
 
 const IndexPage = () => (
   <Layout>
@@ -62,24 +61,20 @@ const IndexPage = () => (
         />
       </div>
     </div>
-    <Section
-      image={require("../images/wallpaper2.jpg")}
-      logo={require("../images/logo-react.png")}
-      title="Work Experience"
-      text="Learn how to build a modern site using React and the most efficient libraries to get your site/product online. Get familiar with components, Grid CSS, animations, interactions, dynamic data with Contentful and deploying your site with Netlify."
-    />
-    <SectionCaption id="section3">Skills</SectionCaption>
+    <SectionCaption id="section2">Skills</SectionCaption>
     <SectionCellGroup>
       {staticdata.cells.map(cell => (
         <Cell class="Cell" title={cell.title} image={cell.image} />
       ))}
     </SectionCellGroup>
+    <Footer id="section3" />
   </Layout>
 )
 
 export default IndexPage
 
 const SectionCaption = styled.p`
+  margin-top: 150px;
   font-weight: 600;
   font-size: 18px;
   text-transform: uppercase;

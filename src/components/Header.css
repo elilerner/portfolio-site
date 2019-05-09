@@ -12,7 +12,9 @@
   backdrop-filter: blur(20px);
 }
 
-.nav-item:hover {
+.nav-item1:hover,
+.nav-item2:hover,
+.nav-item3:hover {
   cursor: pointer;
 }
 

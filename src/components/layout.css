@@ -7,6 +7,10 @@ body {
   background: #212c4f;
 }
 
+#card1 {
+  background: #476572;
+}
+
 a {
   color: #5334f5;
   font-weight: 600;

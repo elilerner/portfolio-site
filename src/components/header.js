@@ -50,6 +50,9 @@ class Header extends React.Component {
     document.getElementById("mainText").style.color = this.state.isDarkMode
       ? "rgba(255,255,255,0.8)"
       : "rgba(0,0,0,0.8)"
+    document.getElementById("section2").style.color = this.state.isDarkMode
+      ? "rgba(255,255,255,0.8)"
+      : "rgba(0,0,0,0.8)"
     // document.getElementById("cardSection").style.background = this.state
     //   .isDarkMode
     //   ? "#212c4f"
@@ -63,7 +66,7 @@ class Header extends React.Component {
       >
         <div className="HeaderGroup">
           <Link
-            class="nav-item"
+            class="nav-item0"
             activeClass="active"
             to="section0"
             spy={true}
@@ -74,7 +77,7 @@ class Header extends React.Component {
             <img width="80" src={require("../images/Frame1.svg")} />
           </Link>
           <Link
-            class="nav-item"
+            class="nav-item1"
             activeClass="active"
             to="section1"
             spy={true}
@@ -85,7 +88,7 @@ class Header extends React.Component {
             Projects
           </Link>
           <Link
-            class="nav-item"
+            class="nav-item2"
             activeClass="active"
             to="section2"
             spy={true}
@@ -93,10 +96,10 @@ class Header extends React.Component {
             offset={-70}
             duration={500}
           >
-            Work Experience
+            Skills
           </Link>
           <Link
-            class="nav-item"
+            class="nav-item3"
             activeClass="active"
             to="section3"
             spy={true}
@@ -104,7 +107,7 @@ class Header extends React.Component {
             offset={-70}
             duration={500}
           >
-            Skills
+            Contact
           </Link>
           <button
             id="darkModeButton"
