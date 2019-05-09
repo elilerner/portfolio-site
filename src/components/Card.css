@@ -20,20 +20,26 @@
   transform: translateY(-20px);
 }
 
-.Card img {
+.Card #img {
   height: 110%;
   position: absolute;
-  margin-left: 165px;
+  margin-left: 160px;
   top: 0;
-  z-index: -1;
+  z-index: 1;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
+.Card #bg {
+  background-size: cover;
+}
+
 .Card h3 {
+  position: absolute;
   color: white;
   font-size: 30px;
   margin: 20px 0 0 20px;
   width: 150px;
+  z-index: 1;
 }
 
 .Card p {
@@ -44,4 +50,6 @@
   align-self: end;
   margin: 0 0 20px 20px;
   width: 150px;
+  position: absolute;
+  z-index: 1;
 }

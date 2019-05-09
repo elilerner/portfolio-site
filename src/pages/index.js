@@ -38,26 +38,31 @@ const IndexPage = () => (
           title="iPhone UI"
           text="React Native"
           image={require("../images/ReactNativeProject.png")}
+          bg={require("../images/bg5.png")}
         />
         <Card
           title="iPhone Prototype"
           text="Framer X + React"
           image={require("../images/FramerXProject.png")}
+          bg={require("../images/bg3.png")}
         />
         <Card
           title="IOS Weather App"
           text="Swift"
           image={require("../images/IOSSwiftProject.png")}
+          bg={require("../images/bg4.png")}
         />
         <Card
           title="Fitness Tracker"
           text="JS, PHP, SQL"
           image={require("../images/FitnessTrackerProject.png")}
+          bg={require("../images/bg1.png")}
         />
         <Card
           title="iWatch Home UI"
           text="Figma"
           image={require("../images/FigmaProject.png")}
+          bg={require("../images/bg2.png")}
         />
       </div>
     </div>
