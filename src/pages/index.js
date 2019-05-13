@@ -18,7 +18,7 @@ const IndexPage = () => (
         <h1 id="mainTitle">
           I'm Eli Lerner <br />
         </h1>
-        <p id="mainText">A designer & front-end developer</p>
+        <p id="mainText">A Designer & Front-End Developer</p>
         <a href="https://zety.com/mycv/elilerner">View My Online Resume</a>
         <div className="Logos">
           <img src={require("../images/logo-sketch.png")} width="50" />
